@@ -38,6 +38,32 @@
          4.	Unmounting Phase
          Each phase contains some lifecycle methods that are specific to the particular phase
              </ol>
+             <li>SPA vs MPA</li>
+             <ul>
+                 <li>In terms of performance SPA not need the reloading so giving higher performance and responsiveness while SPA is slow and performance is affected by reloading. </li>
+                 <li>Acc to coding-wise SPA has reusable code for single page application while MPA need coding from scratch hence no place for reusability</li>
+                 <li>Acc to maintenance SPA is having fast and easy maintenance while in MPA the mainetenance need to be done for each page.</li>
+                 <li>Acc to SEO the SPA is having limited optimization while MPA has several optimization</li>
+                 <li>Acc to user experience the SPA is very smooth and friendly while in MPA has worse user experience</li>
+                 <li>No loading time is required in SPA while it takes ages if the connection is slow.</li>
+                 <li>Acc to security we have to secure the endpoint while the MPA need each page to be secured saparately </li>
+             </ul>
+             <li>State vs Props</li>
+             <ul>
+                 <li>Props are read-only.	State changes can be asynchronous.</li>
+                 <li>Props are immutable.	State is mutable.</li>
+                 <li>Props allow you to pass data from one component to other components as an argument.	State holds information about the components.</li>
+                 <li>Props can be accessed by the child component.	State cannot be accessed by child components.</li>
+                 <li>Props are used to communicate between components.	States can be used for rendering dynamic changes with the component.</li>
+                 <li>Stateless component can have Props.	Stateless components cannot have State.</li>
+                 <li>Props make components reusable.	State cannot make components reusable.</li>
+                 <li>Props are external and controlled by whatever renders the component.	The State is internal and controlled by the React Component itself.</li>
+             </ul>
+             <li>Props Drilling and state uplifting</li>
+             Prop drilling is basically a situation when the same data is being sent at almost every level due to requirements in the final level. 
+             <br><br>
+             every component in React has its own state. Because of this sometimes data can be redundant and inconsistent. So, by Lifting up the state we make the state of the parent component as a single source of truth and pass the data of the parent in its children.
+             <li></li>
 
     </ol>
 </body>
